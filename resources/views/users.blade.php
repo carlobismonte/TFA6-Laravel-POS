@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,14 +22,14 @@
         <tr>
             <th>ID</th>
             <th>Username</th>
-            <th>Role</th>
+            <th>Full Name</th>
         </tr>
 
         @foreach ($users as $user)
         <tr>
-            <td>{{ $user['id'] }}</td>
-            <td>{{ $user['username'] }}</td>
-            <td>{{ $user['role'] }}</td>
+            <td>{{ $user->id }}</td>
+            <td>{{ $user->username }}</td>
+            <td>{{ $user->full_name }}</td>
         </tr>
         @endforeach
     </table>

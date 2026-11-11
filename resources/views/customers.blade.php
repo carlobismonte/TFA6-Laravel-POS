@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +27,9 @@
 
         @foreach ($customers as $customer)
         <tr>
-            <td>{{ $customer['id'] }}</td>
-            <td>{{ $customer['name'] }}</td>
-            <td>{{ $customer['email'] }}</td>
+            <td>{{ $customer->id }}</td>
+            <td>{{ $customer->full_name }}</td>
+            <td>{{ $customer->email }}</td>
         </tr>
         @endforeach
     </table>
